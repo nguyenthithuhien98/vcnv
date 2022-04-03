@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: bisque;
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    
+}
+
+
+#ad{
+    width: 200px;
+    height: 70px;
+    border-width: 4px;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    color: brown;
+    cursor: pointer;
+}
+#ad:active{
+  font-size: 23px;
+}
+
+
+/* căn lề ra bên ngoài(top,right,bottom,left)(margin)
+căn lề vào bên trong(padding) */
+
+
+
+#game{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background: pink;
+    /* overflow: hidden; chiều cao của box không đủ chứa text ,
+    tẽ bị tràn sẽ được dấu đi */
+}
+#character{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left: 100px;
+    
+}
+#ground{
+    width: 100%;
+    height: 300px;
+    
+    position: absolute;
+    bottom: 0;
+}
+#block{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: slide 5s linear infinite;
+    animation: slide 1s linear infinite;
+    /* animation :hiệu ứng chuyển động, đẻ tọa được 1 animation cần có các keyframes */
+    /* linear:chuyển động cùng tốc đọo từ lúc bắt đầu đến lúc kết thúc
+    infinite:chuyển đôngj không giới hạn số lần thực hiện */
+    position: relative;
+}
+@keyframes slide{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 500px;
+
+    }
+}
+/* keyframe để quy định việc phần tử sẽ chuyển động ra sao tại mỗi thời điểm nhất định.
+Name: tên của animation bạn muốn tạo.
+code: Các đoạn code quy định tiến trình chuyển động. Có 2 dạng:
+Sử dụng phần trăm từ 0% đến 100%.
+from...to: thiết lập giá trị từ khởi đầu (from - tương đương với 0%) đến kết thúc (to - tương đương với 100%).
+Để chuyển động xảy ra cần phải kết nối @keyframes với phần tử. */
+
