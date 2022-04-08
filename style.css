@@ -53,7 +53,7 @@ căn lề vào bên trong(padding) */
     
 }
 #ground{
-    width: 100%;
+    width: 0%;
     height: 300px;
     
     position: absolute;
@@ -63,7 +63,6 @@ căn lề vào bên trong(padding) */
     width: 100px;
     height: 100px;
     background-color: black;
-    animation: slide 5s linear infinite;
     animation: slide 1s linear infinite;
     /* animation :hiệu ứng chuyển động, đẻ tọa được 1 animation cần có các keyframes */
     /* linear:chuyển động cùng tốc đọo từ lúc bắt đầu đến lúc kết thúc

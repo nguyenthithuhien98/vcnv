@@ -45,8 +45,11 @@ document.addEventListener("keydown", (evt) => {//gọi sưj kiện
     if (characterLeft == blockLeft && blockTop < 500 && blockTop > 300) {
         alert("game over!"+diem+"diem");
         block.style.animation = "none";
+        // none: khi animation không hoạt động thì nó sẽ giữ nguyên trạng thái bất động của phần tử, 
+        // không thêm một style nào vào thành phần (mặc định).
     }
 },1)
+
     
     
 
