@@ -2,36 +2,17 @@
     margin: 0;
     padding: 0;
 }
+#diem{
+    text-align: center;
+}
 body{
     width: 100%;
     height: 100vh;
-    background: bisque;
+    background-image: url("https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG14V03kC9CCOkhJ06HQkvNgQiiVXvDtfRLGDrYGK6Wfcs284imZupKKWRbVMvjcVQJU1yuLmmOdU8-dBSGq68YPIUN15phEgzDNNP7NhiAPp8XpJFUiwn81vFiIu__54yf6M7eI3jAu3IdgPEpqqAGJOK6tGtIxl7D3ECeIUpqCfezd1rIcgSGdlK6Pl-2xm20kKxgWgRl2U6RwSeqk3rB-lN8ZMNVYx3iTgrVvfzxdqN76X5Fh6eErPhdaPOwx3rsRbIJ728AzrJ21BrcD0vc4=/Hinh-nen-co-xanh-dep-nhat.jpg");
+    background-size: cover;
     display: flex;
     justify-content: last baseline;
-    align-items: center;
-    
 }
-
-
-#ad{
-    width: 200px;
-    height: 70px;
-    border-width: 4px;
-    border-radius: 35px;
-    font-size: 25px;
-    font-weight: bold;
-    color: brown;
-    cursor: pointer;
-}
-#ad:active{
-  font-size: 23px;
-}
-
-
-/* căn lề ra bên ngoài(top,right,bottom,left)(margin)
-căn lề vào bên trong(padding) */
-
-
 
 #game{
     width: 300px;
@@ -39,30 +20,31 @@ căn lề vào bên trong(padding) */
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
-    background: pink;
+    background-image: url("https://msp.c.yimg.jp/images/v2/tpvPBYOX1wpNVI1UoNSgEmx1jt7aSeyUUgvnbi8voK9_Y6JHAdswt5sOThEibs9yEELOAQ0OYbhpTWYCDU7ZzYiv9jYZO9cKjEEoDZbfLvLxekkVSLCfzW8WIi7__njJ_ozt4jeMC7ch2A8SmqoAYk4rq0a0jGXsPcQJ4hSmoJ97N3WshyBIZ2Uro-X7bGbbbA3Kh0NKwijzq3O7l8ufocDXb8cw_T0L6rkOp0w-YuVSSAXUkgnv5dWM6-XVJlIh08OThRYThhzkOF9XPRbMXQ==/600x400-29039_doi-cat-trang_1010.jpg");
+    background-size: cover;
+   
     /* overflow: hidden; chiều cao của box không đủ chứa text ,
     tẽ bị tràn sẽ được dấu đi */
 }
 #character{
     width: 100px;
     height: 100px;
-    background-color: red;
+    /* background-color: red; */
+    background-image: url("https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG7s6XIz6WzUM9mMsixYxaAtspYjMOIcMNbvaVoOvVTNDQmXOUKMTwZxJg06RCTPoV8zXb8-A-Nr6ogbpUUs5Ez-bGrf5ElLwDL7qdcRRwRKeUtU3n8oDqAJf1mOensC68qPHfCxH963e9_Lj8WUXNRbPJQVfe0n_YVs5FK58NEAWoXAtSgGV-lyT6U6aV2P_xgz9APU_6jtg-AVSN-fy47HZ-frYo4b0WNfJ7weHT4nGqQ73KRb9y51ZfPx-UabW7GBp_25UUioNayp8nOdyrr-_-Og6jsekJgpwhbdkVB6IFNBBvNDSnhxpaTJpIQuj3g==/adorable-samoyed-puppy-is-running-and-jumping-picture-id1165915681");
+    background-size: cover;
     position: relative;
+    background-size: cover;
     top: 300px;
     left: 100px;
     
 }
-#ground{
-    width: 0%;
-    height: 300px;
-    
-    position: absolute;
-    bottom: 0;
-}
+
 #block{
     width: 100px;
     height: 100px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url("https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG7wd17hBMI2-DYB7BmGH3pl2tD-0I2Dzz8NcYdpZJmXHkXexT3iJqgkkyC9K7GOQK0zMSHqgCP9NlYHCXHS9uCrDEIDbck9VOot0Yz3cFL6Fm6zjfJSTfzinRmyljD9TjXiYH0yZ-gGFzrQkcEZl5fv5WUqUABp88WsBsprNKttHoeWXhIIlwTtjVR0XURJaEmkWp5quF0c0Z9O42E_l1orqcyPEtATPvnjIRaM3M0hqlmj1g2z0njAHb8eQYwsm3RlVBSlaBBDCL7ffaC1UCDk=/0a3f9a4397e9f231bef9cbba3ddc435a-jpeg.3594");
+    background-size: cover;
     animation: slide 1s linear infinite;
     /* animation :hiệu ứng chuyển động, đẻ tọa được 1 animation cần có các keyframes */
     /* linear:chuyển động cùng tốc đọo từ lúc bắt đầu đến lúc kết thúc

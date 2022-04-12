@@ -1,6 +1,5 @@
 var character = document.getElementById('character');
-var diem=0;
-
+const diem=document.getElementById("diem");
 function moveLeft() {
     let left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     left -= 100;
@@ -8,6 +7,7 @@ function moveLeft() {
         character.style.left = left + "px";
     }
 }
+
 // window,getComputedStylephương pháp này để lấy các kiểu CSS được tính toán của một phần tử.
 // window.getComputedStyle(phần tử giả)trả về thuộc tínhh css đã chọn làm đối tượng
 // getPropertyValue: lấy thuộc tính css của element
@@ -32,19 +32,26 @@ document.addEventListener("keydown", (evt) => {//gọi sưj kiện
     var block = document.getElementById('block');//lấy đối tượng
     //thêm sự kiện cho đối tượng
     block.addEventListener("animationiteration", () => {
-        var random = Math.floor(Math.random() * 2);//tạo số ngẫu nhiên trong đoạn từ 0 đến 1
+        var random = Math.floor(Math.random() * 3);//tạo số ngẫu nhiên trong đoạn từ 0 đến 1
         left = random * 100;
         block.style.left = left + 'px';
         diem++;
+        
+        
     })
+    
     setInterval(function () {
+        diem.innerText++;
      var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
     
     if (characterLeft == blockLeft && blockTop < 500 && blockTop > 300) {
-        alert("game over!"+diem+"diem");
+        alert("you got a score of:"+diem.innerText+"\n\nplay again?"
+        );
+        
         block.style.animation = "none";
+        location.reload();
         // none: khi animation không hoạt động thì nó sẽ giữ nguyên trạng thái bất động của phần tử, 
         // không thêm một style nào vào thành phần (mặc định).
     }
