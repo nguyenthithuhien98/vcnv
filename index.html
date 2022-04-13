@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vuot chuong ngai vat </title>
-    <h1>Bạn đã sẵn sàng! SCORE:</h1>
-    <h1 id="diem">0</h1>
-    </script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <!-- href:vị trí của tài liệu liên kết
-    rel:mối liên hệ giữa tài liệu liên kết và tài liệu hiện tại
-    tyle:chỉ định kiêu media của dữ liệu -->
-
-    <!-- div:đánh dấu khóio block gồm nhiều thẻ khác trong khối -->
-    <!-- <script type="text/javascript"></script>
-    <audio src="shivers.mp3" id="myaudio" loop="loop" ></audio> -->
 
 </head>
+   <body>
+       <div id="scene">
+        <h1>VƯỢT CHƯỚNG NGẠI VẬT</h1>
+        <p id="batdau"><a href="index.html">START</a></p>
+       </div>
+       
+       <style>
+           body{
+               font-size: 10px;
+               background-color: black;
+               color: aliceblue;
+           }
+           h1{
+               font-family: Papyrus;
+               font-size: 50px;
+               padding: 0 0 0 0;
+               margin: 0 0 0 0 ;
+               position: absolute;
+               left: 90px;
+           }
+           a{
+               color: red;
+               text-decoration: none;
+           }
+           a:hover{
+               text-decoration: underline;
+           }
+           #scene{
+               background: url(sky.jpg) no-repeat;
+               height: 1920px;
+               width: 1080px;
+               position: absolute;
+               top: 0;
+               left: 200px;
+           }
+           #batdau{
+               position: absolute;
+               top: 310px;
+               left: 30px;
+               width: 1020px;
+               text-align: center;
+               font-size: 50px;
+               color: brown;
 
-<body>
-    <div id="game">
-        <div id="block"></div>
-        <div id="character"></div>
-    </div>
-    <script src="main.js"></script>
-    <script type="text/javascript"></script>
-</body>
-
+           }
+       </style>
+   </body>
 </html>
